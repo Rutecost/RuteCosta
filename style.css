@@ -1,0 +1,146 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background: linear-gradient(135deg, #dfe9f3, #ffffff); /* Fundo degradê suave */
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+
+    /* Centralização do container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Seções principais */
+main section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9fbfd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Títulos */
+h2 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    background: #eef3f8; /* leve destaque */
+    padding: 5px 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+/* Texto */
+p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* Listas */
+ul {
+    margin: 10px 0 15px 20px;
+    padding-left: 20px;
+}
+
+/* ============================= */
+/* RESPONSIVIDADE */
+/* ============================= */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        display: block; /* quebra em telas bem pequenas */
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
